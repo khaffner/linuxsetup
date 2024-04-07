@@ -49,3 +49,9 @@ curl -fsSL https://get.docker.com -o get-docker.sh
 chmod +x get-docker.sh
 . get-docker.sh
 rm get-docker.sh
+
+# Syncthing
+mkdir -p /etc/apt/keyrings
+curl -L -o /etc/apt/keyrings/syncthing-archive-keyring.gpg https://syncthing.net/release-key.gpg
+apt update
+apt install syncthing -y
