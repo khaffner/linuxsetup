@@ -2,5 +2,5 @@
 
 ### Daily driver Debian desktop
 ```bash
-curl https://raw.githubusercontent.com/khaffner/linuxsetup/debiandesktop.sh | sudo bash
+curl https://raw.githubusercontent.com/khaffner/linuxsetup/master/debiandesktop.sh | sudo bash
 ```
