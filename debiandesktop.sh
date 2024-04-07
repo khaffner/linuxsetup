@@ -40,8 +40,7 @@ apt install code -y
 apt install powershell -y
 
 # Flatpak
-apt install flatpak -y
-apt install gnome-software-plugin-flatpak -y
+apt install flatpak gnome-software-plugin-flatpak -y
 flatpak remote-add --if-not-exists flathub https://dl.flathub.org/repo/flathub.flatpakrepo
 
 # Docker
