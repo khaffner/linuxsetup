@@ -1,4 +1,4 @@
-# Scripts to set up my usual type of systems
+# Scripts to set up various Linux environments my preferred way 
 
 ### Daily driver Debian desktop
 ```bash
