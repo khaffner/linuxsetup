@@ -36,9 +36,6 @@ echo "deb [arch=amd64,arm64,armhf signed-by=/usr/share/keyrings/packages.microso
 apt update
 apt install code -y
 
-# Powershell
-apt install powershell -y
-
 # Flatpak
 apt install flatpak gnome-software-plugin-flatpak -y
 flatpak remote-add --if-not-exists flathub https://dl.flathub.org/repo/flathub.flatpakrepo
