@@ -5,11 +5,7 @@
 # Updates
 apt update && apt upgrade -y
 
-# Remove (to me) bloat
-apt purge libreoffice* gnome-games -y
-apt autoremove -y
-
-# Basic tools and Firefox
+# Basic tools
 apt install git curl gpg software-properties-common apt-transport-https ca-certificates -y
 apt --fix-broken install #maybe
 
@@ -51,3 +47,7 @@ mkdir -p /etc/apt/keyrings
 curl -L -o /etc/apt/keyrings/syncthing-archive-keyring.gpg https://syncthing.net/release-key.gpg
 apt update
 apt install syncthing -y
+
+# Remove (to me) bloat
+apt purge libreoffice* gnome-games -y
+apt autoremove -y
