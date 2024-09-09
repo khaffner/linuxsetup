@@ -1,16 +1,16 @@
 #!/bin/bash
 
-# Disable cdrom repo
-sed -i '/deb cdrom:/ s/^/#/' /etc/apt/sources.list
+# Based on 12.7 netinst with Gnome
 
 # Updates
 apt update && apt upgrade -y
 
-# Minimal Gnome
-apt install gnome-core --no-install-recommends -y
+# Remove (to me) bloat
+apt purge libreoffice* gnome-games -y
+apt autoremove -y
 
 # Basic tools and Firefox
-apt install git wget gpg software-properties-common apt-transport-https ca-certificates firefox-esr -y
+apt install git curl gpg software-properties-common apt-transport-https ca-certificates -y
 apt --fix-broken install #maybe
 
 # Chrome
